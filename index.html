@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        *{
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         body p, h2, h3, li{
+            line-height: 1.750em;
+        }
+        section{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            padding: 20px;
+
+            overflow: auto;
+        }
+        section:nth-child(even) {
+            background-color: lightgrey; 
+        }
+
+        section:nth-child(odd) {
+            background-color: white; 
+        }
+        section h2{
+            padding: 0 0 10px 0;
+        }
+        li{
+            list-style: inside;
+        }
+        #explicacao{
+            font-size: 10px;
+            
+            text-align: center;
+
+            background-color: rgb(255, 66, 66);
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Variáveis</h2>
+            <p>Guardam dados</p>
+            <p>
+                n1 = <abbr title="Serve pro usuário poder digitar">input</abbr>("Digite um número:")
+            </p>
+            
+        </section>
+        <section>
+            <h2>Tipos primitivos de dados</h2>
+            <ul>
+                <li>int - Inteiro</li>
+                <li>float - Real</li>
+                <li>bool - True / False</li>
+                <li>str - String</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Format</h2>
+            <p>
+                soma = 5 + 2 <br>
+                print(<strong>f</strong>"A soma vale <strong>{</strong>soma<strong>}</strong>")
+            </p>
+        </section>
+        <section>
+            <h2>Ordem de precedência</h2>
+            <p id="explicacao"><strong>Não se utiliza colchetes[] e chaves{} em expressões aritméticas, elas servem pra outra coisa (não mencionada em vídeo)</strong></p>
+            <ol>
+                <li>()<wbr>parênteses</li>
+                <li>** potências</li>
+                <li>* multiplicação <br> / divisão normal <br> //divisão inteira <br> % resto da divisão</li>
+                <li>+ soma <br> - subtração</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Formatando casas decimais</h2>
+            <p>print(f"A multiplicação é: {<abbr title="Quero que essa variável">:</abbr><abbr title="Tenha 3 pontos Flutuantes
+                ">.3f</abbr>}")</p>
+        </section>
+    </main>
+</body>
+</html>
